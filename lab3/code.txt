@@ -1,0 +1,17 @@
+3.1
+gcc -o ./src/findmm1 ./src/sequential_min_max.c ./src/find_min_max.c ./src/utils.c -std=c99
+./src/findmm1 1 20
+
+
+3.2 и 3.3
+gcc -o ./src/findmm23 ./src/parallel_min_max.c ./src/find_min_max.c ./src/utils.c -std=c99
+./src/findmm23 --seed 2 --array_size 20 --pnum 3 --by_file
+./src/findmm23 --seed 3 --array_size 20 --pnum 3
+
+
+3.4
+make
+
+
+3.5
+make exec_run
