@@ -16,8 +16,7 @@
 #include "utils.h"
 
 void Killing(int sig){
-    kill(-1, SIGKILL);
-    printf("TIMEOUT\n");
+    kill(0, SIGKILL);
 }
 
 int main(int argc, char **argv) 
@@ -169,6 +168,7 @@ int main(int argc, char **argv)
     {
         signal(SIGALRM, Killing);
         alarm(timeout);
+        sleep(3);
     }
 
     while (active_child_processes > 0) 

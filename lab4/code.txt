@@ -1,11 +1,4 @@
 
-mv lab3/src/find_min_max.h lab4/src
-mv lab3/src/find_min_max.c lab4/src
-mv lab3/src/utils.h lab4/src
-mv lab3/src/utils.c lab4/src
-mv lab3/src/parallel_min_max.c lab4/src
-
-
 3.1
 cd lab4/src 
 make parallel_min_max
