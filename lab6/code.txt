@@ -1,17 +1,5 @@
-  
-В разных терминалах:
-cd AalexanderStudent-os_lab_2019/lab6/src/
+
 make
-./server --port 20001 --tnum 2 --servers serv.txt
-
-
-cd AalexanderStudent-os_lab_2019/lab6/src/
-./server --port 20001 --tnum 2 --servers serv.txt
-
-
-cd AalexanderStudent-os_lab_2019/lab6/src/
-./server --port 20003 --tnum 2 --servers serv.txt
-
-
-cd AalexanderStudent-os_lab_2019/lab6/src/
-./client --k 10 --mod 4000000 --servers serv.txt
+./server --port 20001 --tnum 4
+./server --port 20002 --tnum 4
+./client --k 4 --mod 25 --servers serv.txt
